@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jetmono: ['"JetBrains Mono"', 'monospace'],
+        jetmono: ['JetBrains Mono', 'monospace'],
+        spacegrotesk: ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         customgreen: '#00ff99',
