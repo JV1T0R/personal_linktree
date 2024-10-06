@@ -671,11 +671,11 @@ video {
 }
 
 .font-jetmono{
-  font-family: JetBrains Mono, monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .font-spacegrotesk{
-  font-family: Space Grotesk, sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .text-4xl{
