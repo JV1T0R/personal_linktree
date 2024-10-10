@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        spacegrotesk: ['"Space Grotesk"', 'sans-serif'],
+        jersey: ['"Jersey 10"', 'sans-serif'],
         jetmono: ['"JetBrains Mono"', 'monospace'], 
       },
       colors: {
