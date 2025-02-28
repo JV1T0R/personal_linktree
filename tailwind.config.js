@@ -11,7 +11,7 @@ module.exports = {
         customgreen: '#00ff99',
       },
       boxShadow: {
-        custom: '4px 4px #000000',
+        custom: '0 0 3.2px 1.6px #000000',
         'custom-hover': '0 6px 12px rgba(0, 0, 0, 0.2)',
       },
     },
