@@ -3,6 +3,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* Google Fonts (Font: Jersey + JetBrains Mono) */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+/* Animations */
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
 /* Base Styles */
 * {
   margin: 0;
@@ -13,11 +24,15 @@
 
 body {
   background-color: #020617;
+  background-image: linear-gradient(rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px), linear-gradient(90deg, rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px);
+  background-size: 50px 50px;
+  animation: bg-scrolling-reverse 1.5s linear infinite;
   /* Custom Card Background Class */
+  /* Custom Button for CV Download Class */
 }
 body .card-bg {
   background: #111827;
-  box-shadow: 0 0 5px 1.6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
 }
 body header {
   width: 18rem;
@@ -53,7 +68,6 @@ body header img {
   }
 }
 body .btns {
-  width: 100%;
   /* Custom Button for Links Class */
 }
 body .btns .btn-custom {
