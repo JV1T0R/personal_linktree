@@ -27,50 +27,38 @@ body {
   background-image: linear-gradient(rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px), linear-gradient(90deg, rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px);
   background-size: 50px 50px;
   animation: bg-scrolling-reverse 1.5s linear infinite;
-  /* Custom Card Background Class */
-  /* Custom Button for CV Download Class */
 }
-body .card-bg {
+
+/* Custom Bootstrap Classes */
+/* Card */
+.card {
+  width: 23rem;
   background: #111827;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-}
-body header {
-  width: 18rem;
+  border: 2px solid #00ff99;
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  body header {
-    width: 16rem;
+  .card {
+    width: 21rem;
   }
 }
 @media (max-width: 374px) {
-  body header {
-    width: 15rem;
+  .card {
+    width: 19rem;
   }
 }
-body header h1 {
+
+/* Custom Title*/
+.title-custom {
   font-family: "Jersey 10", sans-serif;
   font-size: 3.2rem;
 }
-body header h1 span {
+.title-custom span {
   color: #00ff99;
 }
-body header img {
-  width: 14rem;
-}
-@media (min-width: 375px) and (max-width: 767px) {
-  body header img {
-    width: 200px;
-  }
-}
-@media (max-width: 374px) {
-  body header img {
-    width: 200px;
-  }
-}
-body .btns {
-  /* Custom Button for Links Class */
-}
-body .btns .btn-custom {
+
+/* Link Button */
+.btn-custom {
   background-color: #ffffff;
   color: #000000;
   font-family: "JetBrains Mono", monospace;
@@ -82,19 +70,21 @@ body .btns .btn-custom {
   padding: 0.5rem 1rem;
   padding-left: 3rem;
 }
-body .btns .btn-custom:hover, body .btns .btn-custom:active {
+.btn-custom:hover, .btn-custom:active {
   cursor: pointer;
   background-color: #00ff99;
   transform: scale(1.05);
   transition: 0.2s ease-in-out;
 }
-body .btns .btn-custom i {
+.btn-custom i {
   position: absolute;
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
-body .btn-modal {
+
+/*  CV Download Button */
+.btn-modal {
   width: 50%;
   background-color: #00ff99;
   color: #000000;
@@ -108,12 +98,12 @@ body .btn-modal {
   padding: 0.5rem 1rem;
   padding-left: 3rem;
 }
-body .btn-modal:hover, body .btn-modal:active {
+.btn-modal:hover, .btn-modal:active {
   cursor: pointer;
   transition: 0.2s ease-in-out;
   border: 1px solid #3da67c;
 }
-body .btn-modal i {
+.btn-modal i {
   position: absolute;
   left: 1rem;
   top: 50%;
