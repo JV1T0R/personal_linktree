@@ -43,14 +43,23 @@ body {
     width: 23rem;
     background: #111827;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-    border: 2px solid #00ff99;
 
     @include mixins.mobile-md {
-        width: 21rem;
+        width: 20rem;
     }
 
     @include mixins.mobile-sm { 
-        width: 19rem;
+        width: 18rem;
+    }
+
+    img{
+        height: 18rem;
+        object-fit: cover;
+
+        @include mixins.mobile-sm { 
+            height: 15rem;
+            object-fit: cover;
+        }
     }
 }
 

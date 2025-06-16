@@ -35,20 +35,31 @@ body {
   width: 23rem;
   background: #111827;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-  border: 2px solid #00ff99;
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .card {
-    width: 21rem;
+    width: 20rem;
   }
 }
 @media (max-width: 374px) {
   .card {
-    width: 19rem;
+    width: 18rem;
+  }
+}
+.card img {
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 374px) {
+  .card img {
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
-/* Custom Title*/
+/* Custom Title */
 .title-custom {
   font-family: "Jersey 10", sans-serif;
   font-size: 3.2rem;
@@ -83,7 +94,7 @@ body {
   transform: translateY(-50%);
 }
 
-/*  CV Download Button */
+/* CV Download Button */
 .btn-modal {
   width: 50%;
   background-color: #00ff99;
