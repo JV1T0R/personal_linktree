@@ -32,24 +32,29 @@ body {
 /* Custom Bootstrap Classes */
 /* Card */
 .card {
-  width: 23rem;
+  width: 25rem;
   background: #111827;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .card {
-    width: 20rem;
+    width: 22rem;
   }
 }
 @media (max-width: 374px) {
   .card {
-    width: 18rem;
+    width: 19rem;
   }
 }
 .card img {
-  height: 18rem;
+  height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .card img {
+    height: 18rem;
+  }
 }
 @media (max-width: 374px) {
   .card img {
