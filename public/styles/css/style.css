@@ -1,8 +1,12 @@
 /* Media Queries */
+/* Variables (Fonts and Colors) */
 /* Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* Google Fonts (Font: Jersey + JetBrains Mono) */
 @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+/* Fonts */
+/* Colors */
+/* Shadows */
 /* Animations */
 @keyframes bg-scrolling-reverse {
   100% {
@@ -28,100 +32,43 @@ body {
   background-size: 50px 50px;
   animation: bg-scrolling-reverse 1.5s linear infinite;
 }
-
-/* Custom Bootstrap Classes */
-/* Card */
-.card {
-  width: 25rem;
+body .card {
   background: #111827;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+  width: 25rem;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .card {
+  body .card {
     width: 22rem;
   }
 }
 @media (max-width: 374px) {
-  .card {
+  body .card {
     width: 19rem;
   }
 }
-.card img {
-  height: 20rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (min-width: 375px) and (max-width: 767px) {
-  .card img {
-    height: 18rem;
-  }
-}
-@media (max-width: 374px) {
-  .card img {
-    height: 15rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-/* Custom Title */
-.title-custom {
+body .card h1 {
+  color: #ffffff;
   font-family: "Jersey 10", sans-serif;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
 }
-.title-custom span {
+body .card h1 span {
   color: #00ff99;
 }
-
-/* Link Button */
-.btn-custom {
-  background-color: #ffffff;
-  color: #000000;
+body .card a {
+  background: #ffffff;
+  color: #0C0C0C;
   font-family: "JetBrains Mono", monospace;
-  font-weight: bold;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0.5rem 1rem;
   padding-left: 3rem;
+  transition: 0.2s ease-in-out;
 }
-.btn-custom:hover, .btn-custom:active {
-  cursor: pointer;
+body .card a i {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+body .card a:hover, body .card a:active {
   background-color: #00ff99;
   transform: scale(1.05);
-  transition: 0.2s ease-in-out;
-}
-.btn-custom i {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* CV Download Button */
-.btn-modal {
-  width: 50%;
-  background-color: #00ff99;
-  color: #000000;
-  font-family: "JetBrains Mono", monospace;
-  border: 1px solid #00ff99;
-  font-weight: bold;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 1rem;
-  padding-left: 3rem;
-}
-.btn-modal:hover, .btn-modal:active {
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  border: 1px solid #3da67c;
-}
-.btn-modal i {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */

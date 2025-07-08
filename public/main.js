@@ -1,6 +1,6 @@
 // Function to redirect to the links
 document.addEventListener('DOMContentLoaded', function() {
-    const linkButtons = document.querySelectorAll('.link-btn')
+    const linkButtons = document.querySelectorAll('.btn')
     
     linkButtons.forEach(button => {
         button.addEventListener('click', function() {

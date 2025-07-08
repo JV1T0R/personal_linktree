@@ -1,6 +1,9 @@
 /* Media Queries */
 @use "mixins";
 
+/* Variables (Fonts and Colors) */
+@use "variables";
+
 /* Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
@@ -35,103 +38,49 @@ body {
         linear-gradient(90deg, rgba(0, 255, 153, 0.20) 0.6px, transparent 0.6px);
     background-size: 50px 50px;
     animation: bg-scrolling-reverse 1.5s linear infinite;
-}
 
-/* Custom Bootstrap Classes */
-/* Card */
-.card {
-    width: 25rem;
-    background: #111827;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-
-    @include mixins.mobile-md {
-        width: 22rem;
-    }
-
-    @include mixins.mobile-sm { 
-        width: 19rem;
-    }
-
-    img{
-        height: 20rem;
-        object-fit: cover;
+    .card {
+        background: variables.$custom-blue;
+        width: 25rem;
+        box-shadow: variables.$custom-shadow;
 
         @include mixins.mobile-md {
-            height: 18rem; 
+            width: 22rem;
         }
 
         @include mixins.mobile-sm { 
-            height: 15rem;
-            object-fit: cover;
+            width: 19rem;
         }
-    }
-}
 
-/* Custom Title */
-.title-custom {
-    font-family: "Jersey 10", sans-serif;
-    font-size: 3.2rem;
+        h1 {
+            color: variables.$standard-white;
+            font-family: variables.$font-family-primary;
+            font-size: 3.5rem;
 
-    span {
-        color: #00ff99;
-    }
-}
+            span {
+                color: variables.$custom-green;
+            }
+        }
 
-/* Link Button */
-.btn-custom {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: bold;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    padding-left: 3rem;
+        a {
+            background: variables.$standard-white;
+            color: variables.$custom-black;
+            font-family: variables.$font-family-secondary;
+            padding: 0.5rem 1rem;
+            padding-left: 3rem;
+            transition: 0.2s ease-in-out;
 
-    &:hover,
-    &:active {
-        cursor: pointer;
-        background-color: #00ff99;
-        transform: scale(1.05);
-        transition: 0.2s ease-in-out;
-    }
+            i {
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+            }
 
-    i {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
-/* CV Download Button */
-.btn-modal {
-    width: 50%;
-    background-color: #00ff99;
-    color: #000000;
-    font-family: 'JetBrains Mono', monospace;
-    border: 1px solid #00ff99;
-    font-weight: bold;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    padding-left: 3rem;
-
-    &:hover,
-    &:active {
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-        border: 1px solid #3da67c;
-    }
-
-    i {
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
+            &:hover,
+            &:active {
+                background-color: variables.$custom-green;
+                transform: scale(1.05);     
+            }    
+        }
     }
 }
