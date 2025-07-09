@@ -10,19 +10,6 @@
 /* Google Fonts (Font: Jersey + JetBrains Mono) */
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-/* Animations */
-@keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 50px 50px;
-    }
-}
-
-@keyframes bg-scrolling {
-    0% {
-        background-position: 50px 50px;
-    }
-}
-
 /* Base Styles */
 * {
     margin: 0;
@@ -39,6 +26,18 @@ body {
     background-size: 50px 50px;
     animation: bg-scrolling-reverse 1.5s linear infinite;
 
+    @keyframes bg-scrolling-reverse {
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+
+    @keyframes bg-scrolling {
+        0% {
+            background-position: 50px 50px;
+        }
+    }
+
     .card {
         background: variables.$custom-blue;
         width: 25rem;
@@ -48,17 +47,25 @@ body {
             width: 22rem;
         }
 
-        @include mixins.mobile-sm { 
+        @include mixins.mobile-sm {
             width: 19rem;
         }
 
         h1 {
             color: variables.$standard-white;
             font-family: variables.$font-family-primary;
-            font-size: 3.5rem;
+            font-size: 4rem;
 
             span {
                 color: variables.$custom-green;
+            }
+
+            @include mixins.mobile-md {
+                font-size: 3.8rem;
+            }
+
+            @include mixins.mobile-sm {
+                font-size: 3.6rem;
             }
         }
 
@@ -79,8 +86,8 @@ body {
             &:hover,
             &:active {
                 background-color: variables.$custom-green;
-                transform: scale(1.05);     
-            }    
+                transform: scale(1.05);
+            }
         }
     }
 }

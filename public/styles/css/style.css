@@ -7,17 +7,6 @@
 /* Fonts */
 /* Colors */
 /* Shadows */
-/* Animations */
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
 /* Base Styles */
 * {
   margin: 0;
@@ -31,6 +20,16 @@ body {
   background-image: linear-gradient(rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px), linear-gradient(90deg, rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px);
   background-size: 50px 50px;
   animation: bg-scrolling-reverse 1.5s linear infinite;
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
 }
 body .card {
   background: #111827;
@@ -50,10 +49,20 @@ body .card {
 body .card h1 {
   color: #ffffff;
   font-family: "Jersey 10", sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 body .card h1 span {
   color: #00ff99;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  body .card h1 {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 374px) {
+  body .card h1 {
+    font-size: 3.6rem;
+  }
 }
 body .card a {
   background: #ffffff;
