@@ -19,7 +19,7 @@ body {
   background-color: #020617;
   background-image: linear-gradient(rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px), linear-gradient(90deg, rgba(0, 255, 153, 0.2) 0.6px, transparent 0.6px);
   background-size: 50px 50px;
-  animation: bg-scrolling-reverse 1.5s linear infinite;
+  animation: bg-scrolling-reverse 2s linear infinite;
 }
 @keyframes bg-scrolling-reverse {
   100% {
@@ -64,7 +64,7 @@ body .card h1 span {
     font-size: 3.6rem;
   }
 }
-body .card a {
+body .card .btn {
   background: #ffffff;
   color: #0C0C0C;
   font-family: "JetBrains Mono", monospace;
@@ -72,12 +72,29 @@ body .card a {
   padding-left: 3rem;
   transition: 0.2s ease-in-out;
 }
-body .card a i {
+body .card .btn i {
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
 }
-body .card a:hover, body .card a:active {
+body .card .btn:hover, body .card .btn:active, body .card .btn:focus {
   background-color: #00ff99;
   transform: scale(1.05);
+}
+body .modal .btn {
+  background: #00ff99;
+  color: #0C0C0C;
+  font-family: "JetBrains Mono", monospace;
+  padding: 0.5rem 1rem;
+  padding-left: 3rem;
+  transition: 0.2s ease-in-out;
+}
+body .modal .btn i {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+body .modal .btn:hover, body .modal .btn:active, body .modal .btn:focus {
+  background: #ffffff;
+  border: 1px solid #00ff99;
 }/*# sourceMappingURL=style.css.map */
